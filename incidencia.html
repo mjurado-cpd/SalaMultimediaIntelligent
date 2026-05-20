@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>	
+    <meta charset="UTF-8">
+    <title>Gestió d’incidències</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+	<!--Zona central, una columna -->
+	<div class="container">
+		<h1>Reportar incidència</h1>
+		<h2>Selecciona el tipus d’incidència:</h2>
+		
+		<!--Text per reportar -->
+		<label for="descripcio">Descripció de la incidència:</label>
+		<div class="text-area">
+			<textarea id="descripcio" placeholder="Descriu breument la incidència..."></textarea>
+		</div>
+		
+		<!--Botó enviar -->
+		<button class="secondary" onclick="reportarIncidencia('')">
+			Enviar
+		</button>
+		
+		<!--Botó enviar incidència càmera -->
+		<button onclick="reportarIncidencia('Càmera')">
+			Problema amb la càmera
+		</button>
+		
+		<!--Botó enviar incidència àudio -->
+		<button onclick="reportarIncidencia('Àudio')">
+			Problema amb l’àudio
+		</button>
+		
+		<!--Botó enviar incidència pantalla -->
+		<button onclick="reportarIncidencia('Pantalla')">
+			Problema amb la pantalla
+		</button>
+		
+		<!--Botó tornar enrere -->
+		<button class="secondary" onclick="location.href='control.html'">
+			Tornar a enrere
+		</button>
+		
+		<!--Botó tornar a l'inici -->
+		<button class="home-btn" onclick="location.href='index.html'">
+			Tornar a l’inici
+		</button>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="UTF-8">
+	<title>Control de la sala</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js" defer></script>	
+</head>
+<body>
+	<div class="container">
+		<h1>Sistema de control i proves de la sala</h1>		
+		<!--Zona central, tres columnes, graella de proves -->		
+		<div class="control-grid">
+			
+			<!--Botó Activar Pantalla-->
+			<div class="control-card" onclick="activarPantalla()">
+				<div id="screen-container">
+					<img id="screen-img" src="img/pantalla.jpg" alt="Pantalla">
+				</div>
+				<button>Prova de pantalla</button>
+			</div>
+			
+			<!--Botó Activar Micròfon-->
+			<div class="control-card" onclick="activarMicrofon()">
+				<div id="mic-container">
+					<img id="mic-img" src="img/micro.jpg">
+					<div id="mic-level"></div>
+				</div>
+				<button>Prova de Micròfons</button>
+			</div>
+			
+			<!--Botó Activar Altaveus-->
+			<div class="control-card" onclick="activarAltaveus()">
+				<div class="card-image">
+					<img id="speaker-img" src="img/audio.jpg">
+				</div>
+				<button>Prova d'Altaveus</button>
+			</div>
+			
+			<!--Botó Activar Càmera-->
+			<div class="control-card" onclick="activarCamera()">
+				<div id="camera-container">
+					<video id="video" autoplay playsinline></video>
+				</div>
+				<button>Prova de Càmera</button>
+			</div>
+			
+			<!--Botó Control Il·luminació-->
+			<div class="control-card" onclick="controlDispositiu('Il·luminació')">
+				<div class="card-image"></div>
+				<button>Prova d'Il·luminació</button>
+			</div>
+			
+			<!--Botó Test General-->
+			<div class="control-card" onclick="testGeneral()">
+				<div class="card-image">
+					<img id="test-img" src="img/test.jpg">
+				</div>
+				<button>Test general</button>
+			</div>
+			<p id="resultat"></p>
+			
+			<!--Botns Incidència i tornar a inici-->
+			
+			<div class="bottom-actions">
+				<!--Botó Incidència -->
+				<button class="secondary" onclick="location.href='incidencia.html'">
+					Incidència
+				</button>
+				<!--Botns Inici -->
+				<button class="home-btn" onclick="location.href='index.html'">
+					Tornar a l’inici
+				</button>
+			</div>
+		</div>
+		</body>
+</html>

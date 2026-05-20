@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>	
+	<meta charset="UTF-8">
+	<title>Sala Multimèdia Intel·ligent</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Sala Multimèdia Intel·ligent</h1>
+		
+		<!--Zona central, dues columnes-->
+		<div class="main-content">
+		
+		<!--Columna esquerra pel QR-->
+        <div class="qr-section">
+			<h2>Escaneja el codi QR per començar</h2>
+			<img src="img/qroffice.png" alt="Codi QR d'accés">
+		</div>
+        
+		<!--Columna dreta per opcions -->
+        <div class="options-section">			
+			<h2>O tria una opció</h2>
+			
+			<!--Botó Videotrucada-->
+			<button onclick="obrirTeamsNovaReunio()">
+				Videotrucada
+			</button>
+			<!--POPUP videotrucada-->
+			<div id="teams-popup" class="teams-popup">
+				<div class="teams-popup-content">
+					<h2>Obrint Microsoft Teams...</h2>
+					<p>Quan s'obri Teams, clica a <strong>"Nova reunió"</strong> per iniciar una videotrucada.</p>
+					<p id="countdown">Obrint en 5 segons...</p>
+					<img src="img/teamsnovareunio.jpg" alt="Captura Teams">
+				</div>
+			</div>
+	
+			<!--Botó Projecció-->
+			<button onclick="obrirOffice()">
+				Projecció de documentació
+			</button>
+			<!--POPUP Projecció-->
+			<div id="office-popup" class="teams-popup">
+				<div class="teams-popup-content">
+					<h2>Obrint Microsoft Office...</h2>
+					<p>Inicia sessió amb el teu compte corporatiu per accedir als documents online.</p>
+					<p id="office-countdown"></p>
+					<img src="img/office.jpg" alt="Microsoft Office">
+				</div>
+			</div>
+			
+			<!--Botó Videotrucada amb projecció-->
+			<button onclick="obrirVideotrucadaProjectada()">
+				Videotrucada amb projecció
+			</button>
+			<!--POPUP Videotrucada amb projecció-->
+			<div id="combo-popup" class="teams-popup">
+				<div class="teams-popup-content">
+					<h2>Preparant videotrucada i projecció...</h2>
+					<p>S'obrirà Microsoft Teams per iniciar la reunió i Microsoft Office per compartir documentació.</p>
+					<p id="combo-countdown"></p>
+					<img src="img/videotrucada-projectada.jpg" alt="Videotrucada amb projecció">
+				</div>
+			</div>
+			</div>
+			
+			<!--Botó Opcions-->
+			<div class="advanced">
+				<h2>Avançat:</h2>
+				<p>Si tens qualsevol problema clica aquí</p>
+				<button class="secondary" onclick="location.href='control.html'">
+					Opcions
+				</button>
+			</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
