@@ -110,7 +110,7 @@ button.secondary:hover {
 .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .bottom-actions {
     margin-top: 40px;
@@ -133,11 +133,12 @@ button.secondary:hover {
     overflow: hidden;
 	margin-bottom: 15px;
 }
+
 /*CSS Video*/
 #video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: none; /*ocult inicialment*/
 }
 
@@ -182,7 +183,6 @@ button.secondary:hover {
 	overflow: hidden;
 	margin-bottom: 15px;	
 }
-
 #screen-container img {
 	width: 100%;
     height: 100%;
@@ -193,7 +193,6 @@ button.secondary:hover {
     height: 100%;
     display: none;
 }
-
 /*CSS Area*/
 textarea {
 	width: 500px;
